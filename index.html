@@ -56,32 +56,31 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
-                            <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+                        <span>
+                            <img src="assets/img/portfolio/as_photography-exclusive-banquet-1812772_1920.jpg" alt="Company Logo" class="round-frame" width="200">
                         </span>
-                        <h4 class="my-3">Weddings</h4>
+                        <h4 class="my-3" >Weddings</h4>
                         <p class="text-muted">Let us help you get your wedding crew on the dance floor. We can provide music for the Ceremony, Cocktail Hour, and Reception. 
                             The cocktail hour could begin with a small jazz trio and pick up later on with top-notch performances of your favorite party classics.
                 
 </p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i> -->
+                        <span>
+                                <img src="assets/img/portfolio/jamiehines1-women-5039680_1920.jpg" alt="Company Logo" class="round-frame" width="200">
+
                         </span>
-                        <h4 class="my-3">Corporate Events</h4>
+                        <h4 class="my-3" >Corporate Events</h4>
                         <p class="text-muted">World class service for corporate events. We tailor the songs to the vibe you want to set and bring a professional image too that's sure to impress.
                             We cover Rock, Pop, Funk/Motown, Dance, Jazz, Holiday, and More.
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i> -->
+                        <span>
+                        <img src="assets/img/portfolio/nala_subrada-nairobi-10009615_1920.jpg" alt="Company Logo" class="round-frame" width="200">
+
                         </span>
-                        <h4 class="my-3">House Parties</h4>
+                        <h4 class="my-3" >House Parties</h4>
                         <p class="text-muted">We love house parties and it's how we got our start. 
                             With different sizes and configurations of the band available, 
                             we have options to suit your budget we'll play your favorite songs and give your attendees an unforgettable experience.</p>
@@ -155,21 +154,32 @@
             
                 <!-- Full-width images with number and caption text -->
             
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="assets/img/FB_IMG_1786233868447.jpg" style="width:100%">
-                </div>
+        
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
+                    <div class="numbertext">1 / 5</div>
                     <img src="assets/img/FB_IMG_1786233533783.jpg" style="width:100%">
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
+                    <div class="numbertext">2 / 5</div>
                     <img src="assets/img/FB_IMG_1786233891184.jpg" style="width:100%">
                 </div>
-                
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="assets/img/+FB_IMG_1786233516159.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="assets/img/+FB_IMG_1786234065548.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="assets/img/+FB_IMG_1786234199572.jpg" style="width:100%">
+                </div>
             
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -198,51 +208,43 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" action="https://formspree.io/f/xppwlrbv" method="POST" data-sb-form-api-token="API_TOKEN">
+                <form action="https://formspree.io/f/xppwlrbv" method="POST" id="contactForm">
+                
                     <div class="row align-items-stretch mb-5">
+                
                         <div class="col-md-6">
+                
                             <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *" required>
                             </div>
+                
                             <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *" required>
                             </div>
+                
                             <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Your Phone *" required>
                             </div>
+                
                         </div>
+                
                         <div class="col-md-6">
+                
                             <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Event Date and Addtional Details *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Event Date and Additional Details *" required></textarea>
                             </div>
+                
                         </div>
+                
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                           </a>
-                        </div>
+                
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">
+                            Send Message
+                        </button>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                
                 </form>
             </div>
         </section>
