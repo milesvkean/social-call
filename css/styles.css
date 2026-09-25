@@ -474,6 +474,12 @@ iframe {
   border: 0;
 }
 
+#iframe-four {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
 summary {
   display: list-item;
   cursor: pointer;
