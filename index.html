@@ -57,7 +57,7 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span>
-                            <img src="assets/img/portfolio/as_photography-exclusive-banquet-1812772_1920.jpg" class="round-frame" width="200">
+                            <img src="assets/img/portfolio/as_photography-exclusive-banquet-1812772_1920.jpg" alt="Company Logo" class="round-frame" width="200">
                         </span>
                         <h4 class="my-3" >Weddings</h4>
                         <p class="text-muted">Let us help you get your wedding crew on the dance floor. We can provide music for the Ceremony, Cocktail Hour, and Reception. 
@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-md-4">
                         <span>
-                                <img src="assets/img/portfolio/jamiehines1-women-5039680_1920.jpg" class="round-frame" width="200">
+                                <img src="assets/img/portfolio/jamiehines1-women-5039680_1920.jpg" alt="Company Logo" class="round-frame" width="200">
 
                         </span>
                         <h4 class="my-3" >Corporate Events</h4>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="col-md-4">
                         <span>
-                        <img src="assets/img/portfolio/nala_subrada-nairobi-10009615_1920.jpg" class="round-frame" width="200">
+                        <img src="assets/img/portfolio/nala_subrada-nairobi-10009615_1920.jpg" alt="Company Logo" class="round-frame" width="200">
 
                         </span>
                         <h4 class="my-3" >House Parties</h4>
@@ -113,7 +113,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Demos</h2>
-                    <h3 class="section-subheading text-muted">Hear previews of our live performances.</h3>
+                    <h3 class="section-subheading text-muted">Hear previews of our live performances</h3>
                     <iframe id="iframe-two" width="75%" height="450" scrolling="no" frameborder="no" allow="autoplay; encrypted-media"
                         src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2302956927&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
                     <div
@@ -123,7 +123,7 @@
                             href="https://soundcloud.com/socialcallband/sets/live-audio-previews" title="Live Audio Previews"
                             target="_blank" style="color: #cccccc; text-decoration: none;">Live Audio Previews</a></div>
                 </div>
-        </section>
+                
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
@@ -139,7 +139,7 @@
                 
 
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><br><br><br><br>Jazz trio also available & perfect for a cocktail hour or to elevate sophisticated atmosphere.<br><br><br><br></p></div>
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted"><br><br><br><br>Jazz trio perfect for a cocktail hour or to elevate sophisticated atmosphere.<br><br><br><br></p></div>
             <iframe src="https://www.youtube-nocookie.com/embed/_fXTVAdxVrM?si=4nRqntXa54AK8JaB" id="iframe-four"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -208,69 +208,52 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form action="https://formspree.io/f/xppwlrbv" method="POST" id="contactForm">
-
-    <div class="row align-items-stretch mb-5">
-
-        <div class="col-md-6">
-
-            <div class="form-group">
-                <input
-                    class="form-control"
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Your Name *"
-                    required>
-            </div>
-
-            <div class="form-group">
-                <input
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="Your Email *"
-                    required>
-            </div>
-
-            <div class="form-group mb-md-0">
-                <input
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    placeholder="Your Phone *"
-                    required>
-            </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-            <div class="form-group form-group-textarea mb-md-0">
-                <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    placeholder="Event Date and Additional Details *"
-                    required></textarea>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="text-center">
-        <button
-            class="btn btn-primary btn-xl text-uppercase"
-            id="submitButton"
-            type="submit">
-            Send Message
-        </button>
-    </div>
-
-</form>
+                <form id="contactForm" action="https://formspree.io/f/xppwlrbv" method="POST" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Event Date and Addtional Details *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                           </a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                </form>
             </div>
         </section>
         <!-- Footer-->
